@@ -4,4 +4,3 @@ def make_qr():
     text = input("Enter a text/link here: ")
     qr_text = pyqrcode.create(text)
     qr_text.png("QR_image.png", scale= 5)
-make_qr()
