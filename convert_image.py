@@ -1,7 +1,7 @@
 def convert_img():
 
     import cv2
-    image = cv2.imread("sn.jpg")
+    image = cv2.imread("picture.jpg")
     grey_filter = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     invert = cv2.bitwise_not(grey_filter)
     blur = cv2.GaussianBlur(invert, (21,21),0)
@@ -12,4 +12,3 @@ def convert_img():
     cv2.imwrite("output1.jpg",grey_filter)
     cv2.imwrite("output2.jpg",invert)
     print("Sketch art can be found on the root folder")
-
