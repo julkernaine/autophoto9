@@ -54,12 +54,12 @@ def openNewwWindow1():
 
 from tkinter.filedialog import askopenfilename
 
-myButton = Button(root, text = "Decode QR Code",command = openNewwWindow1,height= 2, width=50)
-myButton1 = Button(root, text = "Select the Image",command = askopenfilename,height= 2, width=50)
-myButton3 = Button(root, text = "Make QR Image", command = openNewwWindow,height= 2, width=50)
-myButton4 = Button(root, text = "Compress Image", command = comp_img,height= 2, width=50)
-myButton5 = Button(root, text = "Sketch Art", command = convert_img,height= 2, width=50)
-myButton6 = Button(root, text = "Detect Faces", command = face_det,height= 2, width=50)
+myButton = Button(root, text = "Decode QR ",command = openNewwWindow1,height= 2, width=50)
+myButton1 = Button(root, text = "Select Image",command = askopenfilename,height= 2, width=50)
+myButton3 = Button(root, text = "Make a QR Image", command = openNewwWindow,height= 2, width=50)
+myButton4 = Button(root, text = "Compress the Image", command = comp_img,height= 2, width=50)
+myButton5 = Button(root, text = "Make sketch Art", command = convert_img,height= 2, width=50)
+myButton6 = Button(root, text = "Detect the faces", command = face_det,height= 2, width=50)
 
 myButton.pack()
 myButton1.pack()
