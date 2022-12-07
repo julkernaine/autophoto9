@@ -5,7 +5,7 @@ from pyzbar.pyzbar import decode
 from PIL import Image
 import make_qr
 from image_com import comp_img
-from convert_img import convert_img
+from convert_image import convert_img
 from face_detection import face_det
 
 root = Tk()
