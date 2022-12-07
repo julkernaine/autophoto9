@@ -19,6 +19,7 @@ qr_decode = decode(Image.open('QR_image.png'))
 decoded_text = qr_decode[0].data.decode('ascii')
 
 frame=Frame(root, width=300, height=200, bg='white')
+root.resizable(False, False)
 
 
 
