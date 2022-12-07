@@ -5,7 +5,7 @@ def face_det():
     face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 #Reading the input image
-    img = cv2.imread('test.jpg')
+    img = cv2.imread('picture.jpg')
 
 #Converting into grayscale mode
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
