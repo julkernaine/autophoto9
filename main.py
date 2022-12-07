@@ -60,12 +60,12 @@ from tkinter.filedialog import askopenfilename
 
 
 
-myButton = Button(root, text = "Decode QR Code",command = openNewwWindow1,padx= 30,pady=20)
-myButton1 = Button(root, text = "Select the Image",command = askopenfilename,padx= 30,pady=20)
-myButton3 = Button(root, text = "Make QR Image", command = openNewwWindow,padx= 30,pady=20)
-myButton4 = Button(root, text = "Compress Image", command = comp_img,padx= 30,pady=20)
-myButton5 = Button(root, text = "Sketch Art", command = convert_img,padx= 30,pady=20)
-myButton6 = Button(root, text = "Detect Faces", command = face_det,padx= 30,pady=20)
+myButton = Button(root, text = "Decode QR Code",command = openNewwWindow1,height= 5, width=50,pady=20)
+myButton1 = Button(root, text = "Select the Image",command = askopenfilename,height= 5, width=50)
+myButton3 = Button(root, text = "Make QR Image", command = openNewwWindow,height= 5, width=50)
+myButton4 = Button(root, text = "Compress Image", command = comp_img,height= 5, width=50)
+myButton5 = Button(root, text = "Sketch Art", command = convert_img,height= 5, width=50)
+myButton6 = Button(root, text = "Detect Faces", command = face_det,height= 5, width=50)
 
 
 
