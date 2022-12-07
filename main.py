@@ -34,7 +34,7 @@ def myClick1():
 def openNewwWindow():
     newWindow = Toplevel(root)
     newWindow.title("Enter Your Text Here")
-    newWindow.geometry("500x300")
+    newWindow.geometry("500x500")
     e = Entry(newWindow, width=50)
     e.pack()
     e.insert(0, "") 
