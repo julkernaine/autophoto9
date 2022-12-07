@@ -5,7 +5,7 @@ from pyzbar.pyzbar import decode
 from PIL import Image
 import make_qr
 from image_com import comp_img
-from convert_image import convert_img
+from convert_img import convert_img
 from face_detection import face_det
 root = Tk()
 root.title('Imagify')
@@ -17,7 +17,7 @@ from PIL import Image
 qr_decode = decode(Image.open('QR_image.png'))
 decoded_text = qr_decode[0].data.decode('ascii')
 
-frame=Frame(root, width=600, height=500, bg='white')
+frame=Frame(root, width=200, height=200, bg='white')
 
 
 
@@ -53,7 +53,7 @@ from tkinter.filedialog import askopenfilename
 myButton = Button(root, text = "Decode QR Code",command = myClick,padx= 30,pady=20)
 
 myButton1 = Button(root, text = "Select the Image",command = askopenfilename,padx= 30,pady=20)
-myButton3 = Button(root, text = "Make QR Image", command = make_qr,padx= 30,pady=20)
+myButton3 = Button(root, text = "Make QR Image", command = openNewwWindow,padx= 30,pady=20)
 myButton4 = Button(root, text = "Compress Image", command = comp_img,padx= 30,pady=20)
 myButton5 = Button(root, text = "Sketch Art", command = convert_img,padx= 30,pady=20)
 myButton6 = Button(root, text = "Detect Faces", command = face_det,padx= 30,pady=20)
