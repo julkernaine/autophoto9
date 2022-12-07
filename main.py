@@ -18,7 +18,7 @@ from PIL import Image
 qr_decode = decode(Image.open('QR_image.png'))
 decoded_text = qr_decode[0].data.decode('ascii')
 
-frame=Frame(root, width=300, height=200, bg='white')
+
 root.resizable(False, False)
 
 
@@ -54,12 +54,12 @@ def openNewwWindow1():
 
 from tkinter.filedialog import askopenfilename
 
-myButton = Button(root, text = "Decode QR Code",command = openNewwWindow1,height= 5, width=50)
-myButton1 = Button(root, text = "Select the Image",command = askopenfilename,height= 5, width=50)
-myButton3 = Button(root, text = "Make QR Image", command = openNewwWindow,height= 5, width=50)
-myButton4 = Button(root, text = "Compress Image", command = comp_img,height= 5, width=50)
-myButton5 = Button(root, text = "Sketch Art", command = convert_img,height= 5, width=50)
-myButton6 = Button(root, text = "Detect Faces", command = face_det,height= 5, width=50)
+myButton = Button(root, text = "Decode QR Code",command = openNewwWindow1,height= 2, width=50)
+myButton1 = Button(root, text = "Select the Image",command = askopenfilename,height= 2, width=50)
+myButton3 = Button(root, text = "Make QR Image", command = openNewwWindow,height= 2, width=50)
+myButton4 = Button(root, text = "Compress Image", command = comp_img,height= 2, width=50)
+myButton5 = Button(root, text = "Sketch Art", command = convert_img,height= 2, width=50)
+myButton6 = Button(root, text = "Detect Faces", command = face_det,height= 2, width=50)
 
 myButton.pack()
 myButton1.pack()
@@ -68,5 +68,5 @@ myButton4.pack()
 myButton5.pack()
 myButton6.pack()
 
-frame.pack()
+
 root.mainloop()
