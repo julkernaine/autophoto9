@@ -24,4 +24,3 @@ def face_det():
     imS = cv2.resize(img, (960, 540))
     cv2.imshow("output", imS)
     cv2.waitKey()
-face_det()
