@@ -1,5 +1,7 @@
 def face_det():
     import cv2
+    cv2.namedWindow("output", cv2.WINDOW_NORMAL)
+    
 
 #Loading the the classifer
     face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
@@ -18,5 +20,8 @@ def face_det():
         cv2.rectangle(img, (x, y), (x + w, y + h), (255, 0, 0), 2)
 
 #Displaying the output image
-    cv2.imshow('img', img)
+
+    imS = cv2.resize(img, (960, 540))
+    cv2.imshow("output", imS)
     cv2.waitKey()
+face_det()
