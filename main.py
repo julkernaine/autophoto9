@@ -1,3 +1,4 @@
+
 from tkinter import *
 import cv2
 from pyzbar.pyzbar import decode
@@ -47,7 +48,7 @@ def openNewwWindow():
 def openNewwWindow1():
     newWindow = Toplevel(root)
     newWindow.title("Enter Your Text Here")
-    newWindow.geometry("500x300")
+    newWindow.geometry("500x100")
     Label(newWindow,text ="The QR code is : "+ decoded_text).pack()
 
 
